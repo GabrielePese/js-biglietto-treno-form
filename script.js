@@ -15,6 +15,7 @@
 
 
 var creaBiglietto = document.getElementById("btn");
+var cancella = document.getElementById("canc");
 var prezzoKm = 0.21;
 var prezzoTotale;
 
@@ -37,13 +38,26 @@ creaBiglietto.addEventListener("click", function (){
       prezzoTotale = (km * prezzoKm)
     }
 
-var codiceTreno = Math.floor(Math.random () * 1000);
-var carrozza = "AB " + Math.floor (Math.random () * 100);
+var codiceTreno = Math.floor (Math.random () * 1000);
+var carrozza = "AB" + Math.floor (Math.random () * 100);
 
 
 document.getElementById("prezzo").innerHTML = prezzoTotale;
-document.getElementById("nome").innerHTML = nome;
+document.getElementById("passeggero").innerHTML = nome;
 document.getElementById("codice").innerHTML = codiceTreno;
 document.getElementById("carrozza").innerHTML = carrozza;
-document.getElementById("categoria").innerHTML = categoria;
+document.getElementById("tipologia").innerHTML = categoria;
+})
+
+cancella.addEventListener("click", function(){
+
+document.getElementById("prezzo").innerHTML = "";
+document.getElementById("passeggero").innerHTML = "";
+document.getElementById("codice").innerHTML = "";
+document.getElementById("carrozza").innerHTML = "";
+document.getElementById("tipologia").innerHTML = "";
+
+document.getElementById("nome").value = "";
+document.getElementById("km").value = "";
+document.getElementById("categoria").value = "";
 })
