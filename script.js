@@ -37,8 +37,8 @@ creaBiglietto.addEventListener("click", function (){
       prezzoTotale = (km * prezzoKm)
     }
 
-var codiceTreno = math.floor (math.random ()*1000);
-var carrozza = "AB " + math.floor (math.random ()*100);
+var codiceTreno = Math.floor(Math.random () * 1000);
+var carrozza = "AB " + Math.floor (Math.random () * 100);
 
 
 document.getElementById("prezzo").innerHTML = prezzoTotale;
