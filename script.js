@@ -27,13 +27,13 @@ creaBiglietto.addEventListener("click", function (){
   console.log(categoria)
 })
 
-  if (categoria == "Minorenne") {
+  if (categoria == "minorenne") {
     prezzoTotale = (km * prezzoKm) * 0.8 }
 
   else if (categoria == "over65") {
       prezzoTotale = (km * prezzoKm) * 0.6
     }
-    else {
+    else  {
       prezzoTotale = (km * prezzoKm)
     }
 
